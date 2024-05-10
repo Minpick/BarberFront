@@ -1,0 +1,17 @@
+.wrapper {
+   margin-top: 90px;
+}
+.heading {
+   font-family: var(--third-family);
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 129%;
+   text-transform: uppercase;
+   color: #494949;
+   margin-bottom: 30px;
+}
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 30px;
+}

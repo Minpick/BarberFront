@@ -1,0 +1,42 @@
+.wrapper {
+   border: 1px solid #757575;
+   border-radius: 20px;
+   width: 370px;
+   height: 396px;
+}
+
+.name {
+   font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 21px;
+   line-height: 148%;
+   color: #494949;
+   margin: 20px;
+}
+.btnWrapper {
+   display: flex;
+   justify-content: space-between;
+}
+.btn {
+   width: 171px;
+   height: 40px;
+   margin: 12px 20px;
+   font-family: var(--third-family);
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 124%;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: #fff;
+   background: linear-gradient(178deg, #c00505 0%, #8e0303 100%);
+   border-radius: 30px;
+
+}
+.price {
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 119%;
+   color: #494949;
+   margin: 20px;
+}

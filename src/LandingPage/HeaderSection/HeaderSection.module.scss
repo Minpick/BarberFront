@@ -1,0 +1,54 @@
+.wrapper {
+   position: relative;
+   display: flex;
+   align-items: center;
+   height: 80px;
+   justify-content: space-between;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: #c0bdbd;
+   }
+}
+.logo {
+   font-family: var(--font3);
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 102%;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #e31e25;
+}
+.nav{
+   display: flex;
+}
+.navBtn {
+   font-family: var(--second-family);
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 124%;
+   text-align: center;
+   color: #494949;
+   margin: 0 20px;
+}
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #757575;
+   border-radius: 30px;
+   background-color: transparent;
+   width: 167px;
+   height: 50px;
+   font-family: var(--third-family);
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 124%;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: #494949;
+}

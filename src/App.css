@@ -1,0 +1,16 @@
+:root {
+   --font-family: "Montserrat", sans-serif;
+   --second-family: "Inter", sans-serif;
+   --third-family: "Comfortaa", sans-serif;
+   --font3: "Montserrat Alternates", sans-serif;
+   background: #faf5f0;
+ }
+ button{
+   cursor: pointer;
+   transition: all .4s;
+ }
+ a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }

@@ -1,17 +1,20 @@
 
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import './App.css'
+import LandingLayout from './LandingPage/LandingLayout'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
-<Route index element={<div>Hi,</div>}>
+  <Route path='/' element={<Outlet/>}>
+    <Route index element={<LandingLayout/>}>
 
-</Route>
-),{ basename: '/' })
+    </Route>
+  </Route>
+), { basename: '/' })
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   )
 }
 

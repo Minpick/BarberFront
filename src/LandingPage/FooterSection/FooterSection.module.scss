@@ -1,0 +1,35 @@
+.wrapper {
+   margin: 60px 0 200px;
+   padding: 30px 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid rgba(73, 73, 73, 0.3);
+   border-radius: 20px;
+   width: 1170px;
+   height: 144px;
+}
+
+.heading {
+   font-family: var(--third-family);
+   font-weight: 600;
+   font-size: 38px;
+   line-height: 129%;
+   text-transform: uppercase;
+   color: #494949;
+}
+.text {
+   font-family: var(--font-family);
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 135%;
+   color: #494949;
+}
+.phone {
+   font-family: var(--third-family);
+   font-weight: 600;
+   font-size: 38px;
+   line-height: 129%;
+   text-transform: uppercase;
+   color: #494949;
+}

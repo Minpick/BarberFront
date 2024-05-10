@@ -1,0 +1,31 @@
+.wrapper {
+   width: 100%;
+   margin-bottom: 20px;
+}
+.heading {
+   margin-top: 30px;
+   font-family: var(--second-family);
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 111%;
+   color: #494949;
+}
+.input {
+   display: block;
+   width: 770px;
+   padding: 5px 18px;
+   height: 40px;
+   margin: 10px 0;
+   border: 1px solid #757575;
+   border-radius: 120px;
+   width: 354px;
+   height: 40px;
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 148%;
+   color: #494949;
+   &::placeholder{
+      opacity: 0.5;
+   }
+}
