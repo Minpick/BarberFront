@@ -24,7 +24,7 @@ const AppointmentForm = ({serviceId,setServiceId}) => {
             Введите свои данные
          </h3>
          <div className={style.inputWrapper}>
-            <MyInput placeholder={'Имя и фамилия'} name={'fio'} />
+            <MyInput placeholder={'Имя'} name={'fio'} />
             <MyInput placeholder={'Номер телефона'} name={'phoneClient'} />
          </div>
          <MyTextarea placeholder={'Ваш комментарий (Например, вы можете уточнить длину, плотность или цвет ваших волос.)'} name={'comment'} />
