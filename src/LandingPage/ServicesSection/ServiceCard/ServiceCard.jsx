@@ -14,7 +14,7 @@ const ServiceCard = ({ img, price, name }) => {
             <p className={style.price}>
                от {price} ₽
             </p>
-            <Link className={style.btn}>
+            <Link className={style.btn} to = '/appointment'>
                Записаться
             </Link>
          </div>
