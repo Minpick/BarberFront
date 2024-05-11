@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Appointment.module.scss'
 import { Form, redirect, useNavigate } from 'react-router-dom'
 import AppointmentForm from './AppointmentForm/AppointmentForm'
@@ -52,6 +52,7 @@ const Appointment = () => {
       window.scrollTo(0, 0)
     }, [])
    const navigate = useNavigate()
+   const [serviceId,setServiceId] = useState('')
    return (
       <>
          <div className={style.overlay}
@@ -63,9 +64,9 @@ const Appointment = () => {
                <h1>
                   Запись на прием
                </h1>
-               <AppointmentForm />
+               <AppointmentForm serviceId={serviceId} setServiceId={setServiceId}/>
                <AppointmentCalendar />
-               <TimePicker />
+               <TimePicker serviceId={serviceId}/>
                <button className={style.btn}>Записаться</button>
             </Form>
          </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './AppointmentForm.module.scss'
 import MySelect from '../../../UI/MySelect/MySelect'
 import MyInput from '../../../UI/MyInput/MyInput'
@@ -13,13 +13,13 @@ const options = [
    {'6': 'Уход ≈ 60 мин'},
 ]
 
-const AppointmentForm = () => {
+const AppointmentForm = ({serviceId,setServiceId}) => {
    return (
       <div className={style.wrapper}>
          <h3>
             Выберите услугу
          </h3>
-         <MySelect options={options} name={'priceListId'} />
+         <MySelect options={options} value={serviceId} setValue={setServiceId} name={'priceListId'} />
          <h3>
             Введите свои данные
          </h3>

@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import './MySelect.scss'
 import { InputLabel, MenuItem, Select } from '@mui/material'
 
-const MySelect = ({ name, text, defaultValue, options }) => {
-   const [value, setValue] = useState('');
+const MySelect = ({ name, text, defaultValue, options, value, setValue }) => {
+   if (!value && !setValue) {
+      var [value, setValue] = useState('');
+   }
    useEffect(() => {
       setValue(defaultValue || '');
    }, [defaultValue]);

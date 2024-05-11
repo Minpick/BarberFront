@@ -11,7 +11,7 @@ export async function fetchTime(employeeId, date, serviceId) {
    return data.data
 }
 
-const TimePicker = () => {
+const TimePicker = ({serviceId}) => {
    const [searchParams, setSearchParams] = useSearchParams()
    const year = searchParams.get('year')
    const month = searchParams.get('month')
@@ -19,7 +19,7 @@ const TimePicker = () => {
    const time = searchParams.get('time')
    searchParams.delete('time')
    const date = moment(`${year}-${month}-${day}`, 'YYYY-M-D').format('YYYY-MM-DD')
-   const { data } = useQuery({ queryKey: ['days', date], queryFn: () => fetchTime(1, date, 1) })
+   const { data } = useQuery({ queryKey: ['days', date,serviceId], queryFn: () => fetchTime(1, date, serviceId) })
    const displayed = data?.map((el) => {
       return (
          <NavLink to={`?${searchParams.toString()}&time=${moment(el).format('HH:mm')}`} className={style.time} key={el}
