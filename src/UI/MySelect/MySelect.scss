@@ -1,9 +1,9 @@
 .css-9npbnl-MuiFormLabel-root-MuiInputLabel-root {
-   text-align: start!important;
-   color: #5a5a5a!important;
-   font-weight: 600!important;
-   margin-left: 1px!important;
-   margin-bottom: 1px!important;
+   text-align: start !important;
+   color: #5a5a5a !important;
+   font-weight: 600 !important;
+   margin-left: 1px !important;
+   margin-bottom: 1px !important;
 }
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root .Mui-focused {
    border: none;
@@ -30,9 +30,16 @@
    border: none;
    outline: none;
    height: 40px;
+   width: 400px;
    box-sizing: border-box;
-   border-radius: 5px;
-
+   font-family: var(--font-family)!important;
+   font-weight: 400!important;
+   line-height: 111%!important;
+   font-size: 20px!important;
+   color: #494949!important;
+   padding-top: 5px!important;
+   border: 1px solid #75757575 !important;
+   border-radius: 120px !important;
    transition: border-color 0.4s;
    input {
       transition: border-color 0.4s;

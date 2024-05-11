@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const IntroSection = () => {
    return (
-      <div className={style.wrapper}>
+      <div className={style.wrapper} id='introSection'>
          <div className={style.headingWrapper}>
             <h1 className={style.heading}>
                Красота доступна каждому

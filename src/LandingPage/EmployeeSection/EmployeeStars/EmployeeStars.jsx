@@ -5,7 +5,7 @@ import { Rating, Stack } from '@mui/material'
 const EmployeeStars = ({avgStars}) => {
    return (
       <Stack spacing={1}>
-         <Rating name="half-rating-read" defaultValue={avgStars||5} precision={0.1} readOnly />
+         <Rating name="half-rating-read" defaultValue={parseFloat(avgStars)||5} precision={0.1} readOnly />
       </Stack>
    )
 }

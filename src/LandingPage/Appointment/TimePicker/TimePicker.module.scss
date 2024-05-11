@@ -1,0 +1,28 @@
+.wrapper {
+   h3 {
+      margin: 10px 0;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 111%;
+      color: #494949;
+   }
+}
+.timeWrapper{
+   display: flex;
+   gap: 7px;
+}
+.time {
+   border: 1px solid #757575;
+   border-radius: 120px;
+   width: 70px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #494949;
+   transition: all .4s;
+   &:hover{
+      scale: 1.04;
+   }
+}

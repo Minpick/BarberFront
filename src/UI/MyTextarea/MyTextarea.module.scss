@@ -1,27 +1,25 @@
-$dgray: #5a5a5a;
-$gray: #949494;
-.input {
+.textarea {
+   // display: block;
    border: 1px solid #757575;
-   border-radius: 120px;
-   width: 354px;
-   height: 40px;
-   padding-left: 10px;
-   min-height: 40px;
-   margin-bottom: 5px;
+   border-radius: 20px;
+   width: 770px;
+   height: 103px;
+   padding: 10px;
+   resize: none;
+   overflow: scroll;
+   color: #5a5a5a;
    font-family: var(--font-family);
    font-weight: 400;
    font-size: 21px;
    line-height: 148%;
-   color: #5a5a5a;
    background-color: #fff;
-   transition: border-color 0.4s;
    &:focus {
       color: #949494;
       // border: 2px solid #5a5a5a;
       outline: 2px solid #5a5a5a;
    }
    &:hover {
-      border: 1px solid #000000;
+      border: 1px solid #5a5a5a;
    }
    &::placeholder {
       font-family: var(--font-family);

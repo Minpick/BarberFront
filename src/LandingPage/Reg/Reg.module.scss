@@ -1,0 +1,51 @@
+.overlay {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   background: #00000081;
+   z-index: 2;
+}
+.content {
+   margin-top: 100px;
+   width: 450px;
+   height: fit-content;
+   border: 1px solid #757575;
+   border-radius: 20px;
+   padding: 30px;
+   background: #faf5f0;
+   h3 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 111%;
+      color: #494949;
+      margin-bottom: 20px;
+   }
+   button {
+      margin: 20px 0;
+      background: linear-gradient(178deg, #c00505 0%, #8e0303 100%);
+      border-radius: 30px;
+      font-family: var(--third-family);
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 100%;
+      padding: 10px 20px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+   }
+}
+.link {
+   display: flex;
+   justify-content: flex-start;
+   font-family: var(--third-family);
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 100%;
+   letter-spacing: 0.02em;
+   color: #494949;
+}

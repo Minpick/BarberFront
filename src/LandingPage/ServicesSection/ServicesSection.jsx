@@ -10,7 +10,7 @@ import img6 from '../../Assets/ServiceImgs/ServiceImg6.png'
 
 const ServicesSection = () => {
    return (
-      <div className={style.wrapper}>
+      <div className={style.wrapper} id='servicesSection'>
          <h2 className={style.heading}>Наши услуги</h2>
          <div className={style.grid}>
             <ServiceCard img={img1} price={'500'}  name = {'Женская стрижка'}/>
