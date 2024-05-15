@@ -15,25 +15,26 @@ const Metrics = () => {
    const [year, setYear] = useState(parseInt(searchParams.get('year')))
    const [month, setMonth] = useState(parseInt(searchParams.get('month')))
    const { data } = useQuery({ queryKey: ['stats', year, month], queryFn: () => fetchStats(year, month) })
+   console.log(data)
    return (
       <div className={style.wrapper}>
-         {data&&<>
+         <p>
             <h2>
                Данные за месяц:
             </h2>
             <div>
-               Средний чек: {data.avgBill}
+               Средний чек: {data?.avgBill}
             </div>
             <div>
-               Количество записей: {data.numberOfOrders}
+               Количество записей: {data?.numberOfOrders}
             </div>
             <div>
-               Сумма: {data.sum}
+               Сумма: {data?.sum}
             </div>
             <div>
-               Количество уникальных клиентов: {data.numberOfUniqueClients}
+               Количество уникальных клиентов: {data?.numberOfUniqueClients}
             </div>
-         </>}
+         </p>
       </div>
    )
 }

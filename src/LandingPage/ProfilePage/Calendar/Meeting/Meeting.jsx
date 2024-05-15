@@ -33,16 +33,15 @@ const Meeting = ({ children, startTime, priceListId, comment, phoneClient, fio, 
          onMouseLeave={() => setActive(false)}
       >
          <div
-            // className={style.appointmentWrapper} 
+            onMouseLeave={(e)=>e.stopPropagation()}
             className={active ? classNames(style.appointmentWrapper, style.active) : style.appointmentWrapper}
          >
-
             <div className={style.text}>
                <strong>Время:</strong> {moment(startTime).format('HH:mm')}
             </div>
 
             <div className={style.text}>
-               <strong>Услуга:</strong> {services[priceListId + 1]}
+               <strong>Услуга:</strong> {services[priceListId - 1]}
             </div>
             <div className={style.text}>
                <strong>Комментарий:</strong> {comment}
@@ -55,7 +54,7 @@ const Meeting = ({ children, startTime, priceListId, comment, phoneClient, fio, 
             </div>
             <button onClick={() => deleteMeeting()}>Удалить запись</button>
          </div>
-         {children}
+         <div>{children}</div>
       </div>
    )
 }

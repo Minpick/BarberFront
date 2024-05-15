@@ -68,6 +68,9 @@ const Appointment = () => {
                <AppointmentCalendar />
                <TimePicker serviceId={serviceId}/>
                <button className={style.btn}>Записаться</button>
+               <p  className={style.policy}>
+               Нажимая на кнопку “Записаться” вы даете согласие на обработку персональных данных
+               </p>
             </Form>
          </div>
       </>

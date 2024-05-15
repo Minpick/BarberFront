@@ -4,7 +4,7 @@
    background-color: #f2f2f2;
    position: relative;
    border-radius: 20px;
-   overflow: hidden;
+
    margin-top: 30px;
    border: 1px solid #77777734;
 }
@@ -73,7 +73,7 @@
       height: 1px;
       left: 0;
       right: 0;
-      bottom: 0;
+      top: 0;
       background-color: #77777734;
    }
    &::before {
@@ -81,7 +81,7 @@
       position: absolute;
       width: 1px;
       top: 0;
-      right: 0;
+      left: 0;
       bottom: 0;
       background-color: #77777734;
    }

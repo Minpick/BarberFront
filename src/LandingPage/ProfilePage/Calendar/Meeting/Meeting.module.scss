@@ -18,20 +18,19 @@
    opacity: 0;
    padding: 10px;
    background-color: rgb(239, 239, 239);
-   transition: all 1s;
+   transition: scale .5s, opacity .5s;
    border-radius: 10px;
    padding: 5px;
-   button{
+   button {
       font-size: 6px;
-transition: all .4s;
+      transition: all 0.4s;
    }
-   
 }
-.active{
+.active {
    opacity: 1;
    scale: 2.5;
 }
-.text{
-font-size: 8px;
-margin: 3px;
+.text {
+   font-size: 8px;
+   margin: 3px;
 }

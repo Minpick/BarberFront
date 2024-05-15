@@ -56,5 +56,14 @@
    border-radius: 30px;
    width: 200px;
    height: 60px;
+   border: none;
    background: linear-gradient(178deg, #c00505 0%, #8e0303 100%);
+}
+.policy {
+   margin-top: 20px;
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 119%;
+   color: #000;
 }

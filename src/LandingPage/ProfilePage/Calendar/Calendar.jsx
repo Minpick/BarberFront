@@ -49,7 +49,8 @@ const Calendar = () => {
                {moment(el.createdAt).format('D')}
                {/* {el.count > 2 ? <span>+{el.count - 2}</span> : ''} */}
             </div>
-            {el.count !== 0 && <div className={style.events}>
+            {el.count !== 0 && <div className={style.events}
+            >
                {el.meetings?.map((elem, index) => index < 3 &&
                   (
                      <Meeting startTime={elem.startTime}
@@ -60,7 +61,11 @@ const Calendar = () => {
                         employeeId={1}
                         key={elem.startTime}
                      >
-                        <div className={style.event}>
+                        <div className={style.event} 
+                        // onMouseEnter={e=>e.preventDefault()}
+
+
+                        >
                            <div className={style.time}>{moment(elem.startTime).format('HH:mm')}</div>
                            <div>{elem.fio}</div>
                         </div>
